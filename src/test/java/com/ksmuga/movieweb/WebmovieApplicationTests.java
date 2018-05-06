@@ -7,6 +7,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -19,6 +20,7 @@ public class WebmovieApplicationTests {
 
 	@InjectMocks
 	private MovieMapper movieMapper;
+
 
 	@Test
 	public void testMovieMapper() {
@@ -37,4 +39,5 @@ public class WebmovieApplicationTests {
 		Assert.assertEquals("testTitle", mapToMovieDtoList.get(0).getTitle());
 		Assert.assertEquals(1990, mapToMovieDto.getYearOfProduction());
 	}
+
 }

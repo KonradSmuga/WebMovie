@@ -53,8 +53,8 @@ public class Movie {
         this.yearOfProduction = yearOfProduction;
     }
 
-    public MovieDetailsResponse getMovieDetailsResponse() {
-        return movieDetailsResponse;
+    public MovieDetailsResponse getMovieDetailsResponse(MovieDetailsResponse movieDetailsResponse) {
+        return this.movieDetailsResponse;
     }
 
     public void setMovieDetailsResponse(MovieDetailsResponse movieDetailsResponse) {

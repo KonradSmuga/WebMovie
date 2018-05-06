@@ -17,16 +17,15 @@ public class MovieDetailsResponse {
     private BigDecimal boxOffice;
     private Movie movie;
 
-    public MovieDetailsResponse() {
+    private MovieDetailsResponse() {
     }
 
-    public MovieDetailsResponse(String genre, String directorName, String production, BigDecimal boxOffice, Movie movie) {
+    public MovieDetailsResponse(String genre, String directorName, String production, BigDecimal boxOffice) {
 
         this.genre = genre;
         this.directorName = directorName;
         this.production = production;
         this.boxOffice = boxOffice;
-        this.movie = movie;
     }
 
     @Id
